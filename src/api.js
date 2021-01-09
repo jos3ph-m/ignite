@@ -11,4 +11,13 @@ const getCurrentMonth = () => {
   }
 };
 
+const getCurrentDay = () => {
+  const day = new Date().getDate() + 1;
+  if (day < 10) {
+    `0${day}`;
+  } else {
+    return day;
+  }
+};
+
 // Popular Games
