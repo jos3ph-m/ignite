@@ -1,5 +1,5 @@
 // Base URL
-const base_url = 'https://api.rawg.io/api';
+const base_url = 'https://api.rawg.io/api/';
 
 // Getting the date
 const getCurrentMonth = () => {
@@ -29,3 +29,6 @@ const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
 // Popular Games
+const popular_games = `games?dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+
+export const popularGamesURL = () => `${base_url}${popularGamesURL}`;
