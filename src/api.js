@@ -20,4 +20,10 @@ const getCurrentDay = () => {
   }
 };
 
+// Current day/month/year
+const currentYear = new Date().getFullYear();
+const currentMonth = getCurrentMonth();
+const currentDay = getCurrentDay();
+const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+
 // Popular Games
