@@ -13,4 +13,8 @@ const gamesReducer = (state = initState, action) => {
   }
 };
 
+// Action - an object that describes what's going to happen
+// { type: "FETCH_GAMES";}
+// dispatch({type: "FETCH_GAMES"})
+
 export default gamesReducer;
