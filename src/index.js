@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Redux Setup
+import { createStore } from 'redux';
+
+const store = createStore();
 
 ReactDOM.render(
   <React.StrictMode>
