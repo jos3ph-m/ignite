@@ -25,4 +25,6 @@ const fetchGames = (userData) => {
   };
 };
 
+fetchGames({ user: 'name' });
+
 export default gamesReducer;
