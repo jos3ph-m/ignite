@@ -27,6 +27,7 @@ const Home = () => {
             name={game.name}
             released={game.released}
             id={game.id}
+            rating={game.rating}
             image={game.background_image}
             key={game.id}
           />
