@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 // Redux
 import { useDispatch } from 'react-redux';
 import { loadGames } from '../actions/gamesAction';
+// Components
+import Game from '../components/Game';
+// styling and animation
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   // Fetch Games
