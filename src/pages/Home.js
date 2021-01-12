@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // Redux
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { loadGames } from '../actions/gamesAction';
 // Components
 import Game from '../components/Game';
@@ -14,6 +14,9 @@ const Home = () => {
   useEffect(() => {
     dispatch(loadGames());
   });
+
+  // Get that data back
+  const games = useSelector((state) => state.games);
 
   return (
     <div>
