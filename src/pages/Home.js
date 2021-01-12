@@ -19,10 +19,19 @@ const Home = () => {
   const { popular, newGames, upcoming } = useSelector((state) => state.games);
 
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <GameList>
+      <h2>Upcoming Games</h2>
+      <Games>
+        {upcoming.map((game) => (
+          <Game></Game>
+        ))}
+      </Games>
+    </GameList>
   );
 };
+
+const GameList = styled(motion.div)``;
+
+const Games = styled(motion.div)``;
 
 export default Home;
