@@ -37,7 +37,9 @@ const Home = () => {
   );
 };
 
-const GameList = styled(motion.div)``;
+const GameList = styled(motion.div)`
+  padding: 0rem 5rem;
+`;
 
 const Games = styled(motion.div)``;
 
