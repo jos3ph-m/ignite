@@ -33,6 +33,32 @@ const Home = () => {
           />
         ))}
       </Games>
+      <h2>Popular Games</h2>
+      <Games>
+        {popular.map((game) => (
+          <Game
+            name={game.name}
+            released={game.released}
+            id={game.id}
+            rating={game.rating}
+            image={game.background_image}
+            key={game.id}
+          />
+        ))}
+      </Games>
+      <h2>New Games</h2>
+      <Games>
+        {newGames.map((game) => (
+          <Game
+            name={game.name}
+            released={game.released}
+            id={game.id}
+            rating={game.rating}
+            image={game.background_image}
+            key={game.id}
+          />
+        ))}
+      </Games>
     </GameList>
   );
 };
@@ -40,7 +66,7 @@ const Home = () => {
 const GameList = styled(motion.div)`
   padding: 0rem 5rem;
   h2 {
-    padding: 5rem 0rem;
+    padding: 10rem 0rem;
   }
 `;
 
