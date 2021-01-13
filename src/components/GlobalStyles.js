@@ -15,6 +15,15 @@ const GlobalStyles = createGlobalStyle`
       background-color: darkgrey;
     }
   }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+  }
+  h2 {
+    font-size: 3rem;
+    font-family: "Abril Fatface", cursive;
+    font-weight: lighter;
+  }
 `;
 
 export default GlobalStyles;
