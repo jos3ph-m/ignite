@@ -10,9 +10,12 @@ import { loadDetail } from '../actions/detailAction';
 const Game = ({ name, released, image, rating }) => {
   // Load details
   const dispatch = useDispatch();
+  const loadDetailHandler = () => {
+    dispatch(loadDetail);
+  };
 
   return (
-    <StyledGame>
+    <StyledGame onClick={loadDetailHandler}>
       <h3>{name}</h3>
       <p>{released}</p>
       <p>Overall Rating: {rating === 0 ? 'N/A' : rating}</p>
