@@ -3,8 +3,14 @@ import React from 'react';
 // styling and animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+// Redux
+import { useDispatch } from 'react-redux';
+import { loadDetail } from '../actions/detailAction';
 
 const Game = ({ name, released, image, rating }) => {
+  // Load details
+  const dispatch = useDispatch();
+
   return (
     <StyledGame>
       <h3>{name}</h3>
