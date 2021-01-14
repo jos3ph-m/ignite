@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 import { useDispatch } from 'react-redux';
 import { loadDetail } from '../actions/detailAction';
 
-const Game = ({ name, released, image, rating }) => {
+const Game = ({ name, released, image, rating, id }) => {
   // Load details
   const dispatch = useDispatch();
   const loadDetailHandler = () => {
-    dispatch(loadDetail);
+    dispatch(loadDetail(id));
   };
 
   return (
