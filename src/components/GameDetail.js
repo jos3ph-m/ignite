@@ -29,7 +29,11 @@ const GameDetail = () => {
         <div className="media">
           <img src={game.background_image} alt="image" />
         </div>
-        <div className="gallery"></div>
+        <div className="gallery">
+          {screen.results.map((screen) => (
+            <img src={screen.image} key={screen.id} alt="game" />
+          ))}
+        </div>
       </div>
     </div>
   );
