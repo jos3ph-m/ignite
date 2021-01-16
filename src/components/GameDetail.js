@@ -26,6 +26,10 @@ const GameDetail = () => {
             </div>
           </div>
         </div>
+        <div className="media">
+          <img src={game.background_image} alt="image" />
+        </div>
+        <div className="gallery"></div>
       </div>
     </div>
   );
