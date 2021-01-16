@@ -4,8 +4,14 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 // Redux
 import { useSelector } from 'react-redux';
+import Game from './Game';
 
 const GameDetail = () => {
   // Data
-  const detail = useSelector((state) => state.detail);
+  const { screen, game } = useSelector((state) => state.detail);
+  return (
+
+  );
 };
+
+export default GameDetail;
