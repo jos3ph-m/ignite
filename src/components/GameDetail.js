@@ -27,9 +27,9 @@ const GameDetail = () => {
             </Platforms>
           </Info>
         </Stats>
-        <div className="media">
+        <Media>
           <img src={game.background_image} alt={game.background_image} />
-        </div>
+        </Media>
         <div className="description">
           <p>{game.description_raw}</p>
         </div>
@@ -98,8 +98,6 @@ const Media = styled(motion.div)`
   margin-top: 5rem;
   img {
     width: 100%;
-    height: 60vh;
-    object-fit: cover;
   }
 `;
 
