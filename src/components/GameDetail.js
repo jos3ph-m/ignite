@@ -44,4 +44,11 @@ const GameDetail = () => {
   );
 };
 
+const CardShadow = styled(motion.div)`
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.5);
+`;
+
 export default GameDetail;
