@@ -12,12 +12,12 @@ const GameDetail = () => {
   return (
     <CardShadow>
       <Detail>
-        <div className="stats">
+        <Stats>
           <div className="rating">
             <h3>{game.name}</h3>
             <p>Rating: {game.rating}</p>
           </div>
-          <div className="info">
+          <Info>
             <h3>Platforms:</h3>
             <div className="platforms">
               {game.platforms &&
@@ -25,8 +25,8 @@ const GameDetail = () => {
                   <h3 key={data.platform.id}>{data.platform.name}</h3>
                 ))}
             </div>
-          </div>
-        </div>
+          </Info>
+        </Stats>
         <div className="media">
           <img src={game.background_image} alt={game.background_image} />
         </div>
@@ -74,6 +74,16 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
+`;
+
+const Stats = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Info = styled(motion.div)`
+  text-align: center;
 `;
 
 export default GameDetail;
