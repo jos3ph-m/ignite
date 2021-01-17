@@ -10,8 +10,8 @@ const GameDetail = () => {
   // Data
   const { screen, game } = useSelector((state) => state.detail);
   return (
-    <div className="card-shadow">
-      <div className="detail">
+    <CardShadow>
+      <Detail>
         <div className="stats">
           <div className="rating">
             <h3>{game.name}</h3>
@@ -39,8 +39,8 @@ const GameDetail = () => {
               <img src={screen.image} key={screen.id} alt="game" />
             ))}
         </div>
-      </div>
-    </div>
+      </Detail>
+    </CardShadow>
   );
 };
 
@@ -49,6 +49,22 @@ const CardShadow = styled(motion.div)`
   min-height: 100vh;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
+const Detail = styled(motion.div)`
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem 20rem;
+  background: white;
+  position: absolute;
+  left: 10%;
+  color: black;
+  img {
+    width: 100%;
+  }
 `;
 
 export default GameDetail;
