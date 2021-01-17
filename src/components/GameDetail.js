@@ -30,9 +30,9 @@ const GameDetail = () => {
         <Media>
           <img src={game.background_image} alt={game.background_image} />
         </Media>
-        <div className="description">
+        <Description>
           <p>{game.description_raw}</p>
-        </div>
+        </Description>
         <div className="gallery">
           {screen.results &&
             screen.results.map((screen) => (
@@ -99,6 +99,10 @@ const Media = styled(motion.div)`
   img {
     width: 100%;
   }
+`;
+
+const Description = styled(motion.div)`
+  margin: 5rem 0rem;
 `;
 
 export default GameDetail;
