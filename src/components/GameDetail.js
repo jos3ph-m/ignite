@@ -18,7 +18,7 @@ const GameDetail = () => {
             <p>Rating: {game.rating}</p>
           </div>
           <div className="info">
-            <h3>Platforms</h3>
+            <h3>Platforms:</h3>
             <div className="platforms">
               {game.platforms.map((data) => (
                 <h3 key={data.platform.id}>{data.platform.name}</h3>
