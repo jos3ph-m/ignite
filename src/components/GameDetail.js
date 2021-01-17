@@ -20,9 +20,10 @@ const GameDetail = () => {
           <div className="info">
             <h3>Platforms:</h3>
             <div className="platforms">
-              {game.platforms.map((data) => (
-                <h3 key={data.platform.id}>{data.platform.name}</h3>
-              ))}
+              {game.platforms &&
+                game.platforms.map((data) => (
+                  <h3 key={data.platform.id}>{data.platform.name}</h3>
+                ))}
             </div>
           </div>
         </div>
@@ -30,9 +31,10 @@ const GameDetail = () => {
           <img src={game.background_image} alt="image" />
         </div>
         <div className="gallery">
-          {screen.results.map((screen) => (
-            <img src={screen.image} key={screen.id} alt="game" />
-          ))}
+          {screen.results &&
+            screen.results.map((screen) => (
+              <img src={screen.image} key={screen.id} alt="game" />
+            ))}
         </div>
       </div>
     </div>
