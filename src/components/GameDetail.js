@@ -30,6 +30,9 @@ const GameDetail = () => {
         <div className="media">
           <img src={game.background_image} alt="image" />
         </div>
+        <div className="description">
+          <p>{game.description_raw}</p>
+        </div>
         <div className="gallery">
           {screen.results &&
             screen.results.map((screen) => (
