@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Home />
+      <Route path={['/game/:id', '/']}>
+        <Home />
+      </Route>
     </div>
   );
 }
