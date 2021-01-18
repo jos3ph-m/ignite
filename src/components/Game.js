@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 // Redux
 import { useDispatch } from 'react-redux';
 import { loadDetail } from '../actions/detailAction';
+import { Link } from 'react-router-dom';
 
 const Game = ({ name, released, image, rating, id }) => {
   // Load details
@@ -16,10 +17,12 @@ const Game = ({ name, released, image, rating, id }) => {
 
   return (
     <StyledGame onClick={loadDetailHandler}>
-      <h3>{name}</h3>
-      <p>{released}</p>
-      <p>Overall Rating: {rating === 0 ? 'N/A' : rating}</p>
-      <img src={image} alt={name}></img>
+      <Link to={`/game/${id}`}>
+        <h3>{name}</h3>
+        <p>{released}</p>
+        <p>Overall Rating: {rating === 0 ? 'N/A' : rating}</p>
+        <img src={image} alt={name}></img>
+      </Link>
     </StyledGame>
   );
 };
