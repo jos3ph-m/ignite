@@ -10,6 +10,12 @@ const detailReducer = (state = initialState, action) => {
       return {
         ...state,
         ...action.payload,
+        isLoading: false,
+      };
+    case 'LOADING_DETAIL':
+      return {
+        ...state,
+        isLoading: true,
       };
     default:
       return {
