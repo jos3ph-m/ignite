@@ -13,7 +13,7 @@ import { useLocation } from 'react-router-dom';
 const Home = () => {
   // get the current location
   const location = useLocation();
-
+  const path = location.pathname.split('/');
   // Fetch Games
   const dispatch = useDispatch();
   useEffect(() => {
