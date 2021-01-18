@@ -8,8 +8,12 @@ import Game from '../components/Game';
 // styling and animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+  // get the current location
+  const location = useLocation();
+
   // Fetch Games
   const dispatch = useDispatch();
   useEffect(() => {
