@@ -6,6 +6,11 @@ import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 
 const GameDetail = () => {
+  // Exit Detail
+  const exitDetailHandler = (e) => {
+    const element = e.target;
+  };
+
   // Data
   const { screen, game, isLoading } = useSelector((state) => state.detail);
   return (
