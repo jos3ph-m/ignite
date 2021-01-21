@@ -21,7 +21,7 @@ const Game = ({ name, released, image, rating, id }) => {
   return (
     <StyledGame layoutId={stringPathId} onClick={loadDetailHandler}>
       <Link to={`/game/${id}`}>
-        <h3>{name}</h3>
+        <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
         <p>{released}</p>
         <p>Overall Rating: {rating === 0 ? 'N/A' : rating}</p>
         <motion.img
