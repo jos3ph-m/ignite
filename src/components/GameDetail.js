@@ -26,6 +26,24 @@ const GameDetail = ({ pathId }) => {
     }
   };
 
+  // Get platform images
+  const getPlatform = (platform) => {
+    switch (platform) {
+      case 'PlayStation 4':
+        return playstation;
+      case 'PC':
+        return steam;
+      case 'Xbox One':
+        return xbox;
+      case 'Nintendo Switch':
+        return nintendo;
+      case 'iOS':
+        return apple;
+      default:
+        return gamepad;
+    }
+  };
+
   // Data
   const { screen, game, isLoading } = useSelector((state) => state.detail);
   return (
@@ -43,7 +61,10 @@ const GameDetail = ({ pathId }) => {
                 <Platforms>
                   {game.platforms &&
                     game.platforms.map((data) => (
-                      <h3 key={data.platform.id}>{data.platform.name}</h3>
+                      <img
+                        key={data.platform.id}
+                        src={getPlatform(data.platform.name)}
+                      ></img>
                     ))}
                 </Platforms>
               </Info>
