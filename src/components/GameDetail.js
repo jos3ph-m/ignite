@@ -130,7 +130,7 @@ const Detail = styled(motion.div)`
   position: absolute;
   left: 10%;
   color: black;
-  z-index: 10;
+  z-index: 9;
   img {
     width: 100%;
   }
