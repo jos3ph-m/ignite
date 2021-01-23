@@ -39,6 +39,7 @@ const GameDetail = ({ pathId }) => {
         stars.push(<img alt="star" key={i} src={starEmpty}></img>);
       }
     }
+    return stars;
   };
 
   // Get platform images
@@ -156,6 +157,11 @@ const Stats = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  img {
+    width: 2rem;
+    height: 2rem;
+    display: inline;
+  }
 `;
 
 const Info = styled(motion.div)`
