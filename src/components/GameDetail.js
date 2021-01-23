@@ -29,7 +29,9 @@ const GameDetail = ({ pathId }) => {
     }
   };
   // Get stars
-  const getStars = () => {};
+  const getStars = () => {
+    const stars = [];
+  };
 
   // Get platform images
   const getPlatform = (platform) => {
