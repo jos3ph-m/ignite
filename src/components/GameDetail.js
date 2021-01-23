@@ -28,6 +28,8 @@ const GameDetail = ({ pathId }) => {
       history.push('/');
     }
   };
+  // Get stars
+  const getStars = () => {};
 
   // Get platform images
   const getPlatform = (platform) => {
