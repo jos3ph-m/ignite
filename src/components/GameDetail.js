@@ -34,6 +34,9 @@ const GameDetail = ({ pathId }) => {
     const rating = Math.floor(game.rating);
     for (let i = 1; i <= 5; i++) {
       if (i < rating) {
+        stars.push(<img alt="star" key={i} src={starFull}></img>);
+      } else {
+        stars.push(<img alt="star" key={i} src={starEmpty}></img>);
       }
     }
   };
