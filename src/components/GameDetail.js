@@ -32,6 +32,10 @@ const GameDetail = ({ pathId }) => {
   const getStars = () => {
     const stars = [];
     const rating = Math.floor(game.rating);
+    for (let i = 1; i <= 5; i++) {
+      if (i < rating) {
+      }
+    }
   };
 
   // Get platform images
