@@ -16,6 +16,7 @@ import apple from '../img/apple.svg';
 import gamepad from '../img/gamepad.svg';
 // Star Images
 import starEmpty from '../img/star-empty.png';
+import starFull from '../img/star-full.png';
 
 const GameDetail = ({ pathId }) => {
   const history = useHistory();
