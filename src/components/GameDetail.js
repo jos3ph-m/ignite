@@ -31,7 +31,7 @@ const GameDetail = ({ pathId }) => {
   // Get stars
   const getStars = () => {
     const stars = [];
-    const rating = game.rating;
+    const rating = Math.floor(game.rating);
   };
 
   // Get platform images
