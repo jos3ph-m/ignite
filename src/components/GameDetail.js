@@ -14,6 +14,8 @@ import xbox from '../img/xbox.svg';
 import nintendo from '../img/nintendo.svg';
 import apple from '../img/apple.svg';
 import gamepad from '../img/gamepad.svg';
+// Star Images
+import starEmpty from '../img/star-empty.png';
 
 const GameDetail = ({ pathId }) => {
   const history = useHistory();
