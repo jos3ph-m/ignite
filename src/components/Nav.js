@@ -6,6 +6,8 @@ import logo from '../img/logo.svg';
 
 const Nav = () => {
   return(
-    
+
   );
 }
+
+export default Nav;
