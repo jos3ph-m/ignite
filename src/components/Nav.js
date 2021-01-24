@@ -10,4 +10,8 @@ const Nav = () => {
   );
 }
 
+const StyledNav = styled(motion.nav)`
+
+`
+
 export default Nav;
