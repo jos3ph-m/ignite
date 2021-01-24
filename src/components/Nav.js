@@ -13,5 +13,6 @@ const Nav = () => {
 };
 
 const StyledNav = styled(motion.nav)``;
+const Logo = styled(motion.div)``;
 
 export default Nav;
