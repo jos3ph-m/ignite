@@ -39,6 +39,11 @@ const StyledNav = styled(motion.nav)`
     color: white;
   }
 `;
-const Logo = styled(motion.div)``;
+const Logo = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+`;
 
 export default Nav;
