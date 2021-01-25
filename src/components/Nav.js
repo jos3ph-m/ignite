@@ -7,7 +7,14 @@ import logo from '../img/logo.svg';
 const Nav = () => {
   return (
     <StyledNav>
-      <Logo></Logo>
+      <Logo>
+        <img src={logo} alt="logo" />
+        <h1>Ignite</h1>
+      </Logo>
+      <div className="search">
+        <input type="text" />
+        <button>Search</button>
+      </div>
     </StyledNav>
   );
 };
