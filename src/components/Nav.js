@@ -44,6 +44,10 @@ const Logo = styled(motion.div)`
   justify-content: center;
   padding: 1rem;
   cursor: pointer;
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
 `;
 
 export default Nav;
