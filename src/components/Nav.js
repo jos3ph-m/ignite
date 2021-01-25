@@ -35,6 +35,8 @@ const StyledNav = styled(motion.nav)`
     border: none;
     padding: 0.5rem 2rem;
     cursor: pointer;
+    background: #ff7676;
+    color: white;
   }
 `;
 const Logo = styled(motion.div)``;
