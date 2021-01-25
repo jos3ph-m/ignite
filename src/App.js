@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
+      <Nav />
       <Route path={['/game/:id', '/']}>
         <Home />
       </Route>
