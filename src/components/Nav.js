@@ -26,6 +26,7 @@ const StyledNav = styled(motion.nav)`
     width: 30%;
     font-size: 1.5rem;
     padding: 0.5rem;
+    border: none;
   }
 `;
 const Logo = styled(motion.div)``;
