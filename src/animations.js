@@ -15,3 +15,25 @@ export const fadeIn = {
     },
   },
 };
+
+export const popUp = {
+  hidden: {
+    opacity: 0,
+    scale: 0.7,
+    y: 200,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.75,
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0.75,
+      },
+    },
+  },
+};
