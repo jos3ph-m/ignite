@@ -15,6 +15,11 @@ const Nav = () => {
     setTextInput(e.target.value);
   };
 
+  const submitSearch = (e) => {
+    e.preventDefault();
+    dispatch(fetchSearch(textInput));
+  };
+
   return (
     <StyledNav>
       <Logo>
@@ -22,8 +27,10 @@ const Nav = () => {
         <h1>Ignite</h1>
       </Logo>
       <form className="search">
-        <input onChange={inputHandler} type="text" />
-        <button type="submit">Search</button>
+        <input value={textInput} onChange={inputHandler} type="text" />
+        <button onClick={submitSearch} type="submit">
+          Search
+        </button>
       </form>
     </StyledNav>
   );
